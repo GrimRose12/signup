@@ -1,5 +1,5 @@
 :root {
-    --input-field-gap: 10px;
+    --input-field-gap: 20px;
 }
 
 @font-face {
@@ -111,11 +111,12 @@ label, p {
     border: none;
     background-color: transparent;
     cursor: pointer;
+    margin: 10px;
 }
 
 #bgmToggle img {
-    width: 24px; 
-    height: 24px; 
+    width: 40px; 
+    height: 40px; 
 }
 
 .play {

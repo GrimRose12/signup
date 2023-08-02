@@ -1,10 +1,82 @@
+:root {
+    --input-field-gap: 10px;
+}
+
 .sidebar {
     background-image: url("images/background.png");
     background-size: cover;
-    width: 500px;
+    width: 40vw;
     height: 1000px;
 }
 
 .container {
     display: flex;
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.signupForm {
+    padding-left: 20px;
+    width: 60vw;
+}
+
+.name, .password {
+    display: flex;
+    gap: var(--input-field-gap);
+}
+
+
+.inputContainer {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+input, select, button {
+    margin-top: 10px;
+}
+
+#email {
+    /* width: calc(40ch + var(--input-field-gap)); */
+    width: calc(40ch + 8px + var(--input-field-gap));
+}
+
+#signet {
+    max-width: calc(40ch + 18px + var(--input-field-gap));
+}
+
+.signupForm {
+    background: #0C090A;
+}
+
+label, p {
+    color: white;
+}
+
+/* @media (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+
+    .container {
+        flex-direction: column;
+        background-image: url(./images/background.png);
+    }
+} */
+
+
+audio::-webkit-media-controls-panel {
+    background-color: pink;
+}
+
+audio::-webkit-media-controls-mute-button {
+    display: none;
+  }
+
+audio::-webkit-media-controls-play-button {
+    background: url("./images/musicIcon.png");
 }

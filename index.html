@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sign Up</title>
 
     <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
     <link href="styles.css" rel="stylesheet">
@@ -12,34 +12,72 @@
 <body>
     <div class="container">
         <div class="sidebar">
+            <audio id="customAudio" loop src="./sounds/TruE.mp3"></audio>
+            <button id="bgmToggle">Play</button>
         </div>
-        <div class="signup-form">
+        <div class="signupForm">
             <form>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
-                    impedit, laborum accusantium ea qui, sequi ab ut fuga nam,
-                    placeat modi harum quam optio saepe sapiente similique dolore.
-                    Eum, nostrum?</p>
-                <p>You know you want to.</p>
-                <p>Let's do this!</p>
-                <div class="name">
-                    <label for="firstName">First name:</label>
-                    <input type="text" id="firstName">
-                    <label for="lastName">Last name:</label>
-                    <input type="text" id="lastName">
+                <div>
+                    <p>Humanity is on the brink of extinction. At times like these,
+                        heroes rise from the masses to protect their home.</p>
+                    <p>Will you be one of us?</p>
+                    <p>No, you have to be one of us.</p>
                 </div>
-                <div class="contact">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email">
-                    <label for="phoneNumber">Phone number:</label>
-                    <input type="number" id="phoneNumber">
+                <div class="formContainer">
+                    <div class="name">
+                        <div class="firstName inputContainer">
+                            <label for="firstName">First name:</label>
+                            <input type="text" id="firstName">
+                        </div>
+                        <div class="lastName inputContainer">
+                            <label for="lastName">Last name:</label>
+                            <input type="text" id="lastName" required>
+                        </div>
+                    </div>
+
+                    <div class="email inputContainer">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" required size="20">
+                    </div>
+
+                    <div class="signet inputContainer">
+                        <label for="signet">What power do you want to inherit?</label>
+                        <select id="signet">
+                            <option>Deliverance</option>
+                            <option>Ego</option>
+                            <option>Discipline</option>
+                            <option>Gold</option>
+                            <option>Helix</option>
+                            <option>Decimation</option>
+                            <option>Bodhi</option>
+                            <option>Setsuna</option>
+                            <option>Daybreak</option>
+                            <option>Infinity</option>
+                            <option>Star</option>
+                            <option>Vicissitude</option>
+                            <option>Reverie</option>
+                        </select>
+                    </div>
+
+                    <div class="password">
+                        <div class="passwordInput inputContainer">
+                            <label for="password">Password:</label>
+                            <input type="password" id="password" required>
+                        </div>
+                        <div class="passwordConfirm inputContainer">
+                            <label for="passwordConfirm">Confirm password:</label>
+                            <input type="password" id="passwordConfirm" required>
+                        </div>
+                    </div>
                 </div>
-                <label for="password">Password:</label>
-                <input type="password" id="password">
-                <label for="confirmPassword">Confirm password:</label>
-                <input type="password" id="confirmPassword">
-                <button type="submit">Create Account</button>
+                
+                <section>
+                    <button type="submit">Create Account</button>
+                    <p>Already have an account? <a href="#">Sign in</a></p>
+                </section>
             </form>
-            <p>Already have an account? <a href="#">Sign in</a></p>
+
+            
         </div>
     </div>
 </body>

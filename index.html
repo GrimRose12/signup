@@ -13,15 +13,17 @@
     <div class="container">
         <div class="sidebar">
             <audio id="customAudio" loop src="./sounds/TruE.mp3"></audio>
-            <button id="bgmToggle">Play</button>
+            <button id="bgmToggle" aria-label="Toggle Play/Pause">
+                <img src="./images/musicOn.png" alt="Play" id="playIcon" class="hide">
+                <img src="./images/musicOff.png" alt="Pause" id="pauseIcon" class="show">
         </div>
+        
         <div class="signupForm">
             <form>
                 <div>
                     <p>Humanity is on the brink of extinction. At times like these,
                         heroes rise from the masses to protect their home.</p>
-                    <p>Will you be one of us?</p>
-                    <p>No, you have to be one of us.</p>
+                    <p>Are you ready to bear the burden of our Signets?</p>
                 </div>
                 <div class="formContainer">
                     <div class="name">

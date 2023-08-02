@@ -69,14 +69,23 @@ label, p {
 } */
 
 
-audio::-webkit-media-controls-panel {
-    background-color: pink;
+/* Music button */
+#bgmToggle {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
 }
 
-audio::-webkit-media-controls-mute-button {
+#bgmToggle img {
+    width: 24px; 
+    height: 24px; 
+}
+
+.hide {
     display: none;
-  }
-
-audio::-webkit-media-controls-play-button {
-    background: url("./images/musicIcon.png");
 }
+
+.show {
+    display: inline;
+}
+/* ---------------- */

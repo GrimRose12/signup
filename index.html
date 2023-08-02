@@ -21,11 +21,15 @@
         </div>
 
         <div class="signupForm">
-            <form>
-                <div>
-                    <p>Humanity is on the brink of extinction. At times like these,
+            <video autoplay muted loop id="myVideo">
+                <source src="./video/background.mp4" type="video/mp4">
+            </video>
+
+            <form class="signupContainer">
+                <div class="introduction">
+                    <p class="intro">Humanity is on the brink of extinction. At times like these,
                         heroes rise from the masses to protect their home.</p>
-                    <p>Are you ready to bear the burden of our Signets?</p>
+                    <p class="intro">Are you ready to bear the burden of our Signets?</p>
                 </div>
                 <div class="formContainer">
                     <div class="name">
@@ -42,6 +46,17 @@
                     <div class="email inputContainer">
                         <label for="email">Email:</label>
                         <input type="email" id="email" required size="20">
+                    </div>
+
+                    <div class="password">
+                        <div class="passwordInput inputContainer">
+                            <label for="password">Password:</label>
+                            <input type="password" id="password" required>
+                        </div>
+                        <div class="passwordConfirm inputContainer">
+                            <label for="passwordConfirm">Confirm password:</label>
+                            <input type="password" id="passwordConfirm" required>
+                        </div>
                     </div>
 
                     <div class="signet inputContainer">
@@ -63,22 +78,12 @@
                         </select>
                     </div>
 
-                    <div class="password">
-                        <div class="passwordInput inputContainer">
-                            <label for="password">Password:</label>
-                            <input type="password" id="password" required>
-                        </div>
-                        <div class="passwordConfirm inputContainer">
-                            <label for="passwordConfirm">Confirm password:</label>
-                            <input type="password" id="passwordConfirm" required>
-                        </div>
-                    </div>
                 </div>
                 
-                <section>
+                <div class="bottom">
                     <button type="submit">Create Account</button>
                     <p>Already have an account? <a href="#">Sign in</a></p>
-                </section>
+                </div>
             </form>
 
             

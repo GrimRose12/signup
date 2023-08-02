@@ -71,6 +71,25 @@ input, select, .submitButton {
     border: 1px solid gold;
 }
 
+.logoBanner {
+    background-color: rgba(255,255,255,0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 75px;
+}
+
+
+.logo {
+    width: 160px;
+    height: 120px;
+    
+}
+
 a {
     text-decoration: none;
 }

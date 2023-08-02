@@ -62,6 +62,13 @@ body {
     flex-direction: column;
 }
 
+
+
+input:focus{
+    outline: none;
+    border: 2px solid #e6007e;
+}
+
 input, select, .submitButton {
     margin-top: 10px;
 }

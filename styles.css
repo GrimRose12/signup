@@ -2,6 +2,7 @@
     --input-field-gap: 20px;
 }
 
+
 @font-face {
     font-family: "desperation";
     src:
@@ -22,6 +23,8 @@
 body {
     overflow: hidden;
     animation: fadeIn 2s ease-in-out 0s;
+    margin: 0px;
+    padding: 0px;
 }
 
 .sidebar {

@@ -81,11 +81,11 @@ label, p {
     height: 24px; 
 }
 
-.hide {
+.play {
     display: none;
 }
 
-.show {
-    display: inline;
+.pause {
+    display: block;
 }
 /* ---------------- */

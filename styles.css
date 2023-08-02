@@ -1,0 +1,10 @@
+.sidebar {
+    background-image: url("images/background.png");
+    background-size: cover;
+    width: 500px;
+    height: 1000px;
+}
+
+.container {
+    display: flex;
+}

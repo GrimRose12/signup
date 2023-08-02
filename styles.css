@@ -57,6 +57,24 @@ input, select, .submitButton {
     margin-top: 10px;
 }
 
+.submitButton {
+    background-color: #650505;
+    border-radius: 5px;
+    border: 1px solid #650505;
+    padding: 10px 30px;
+    font-size: 20px;
+    color: silver;
+}
+
+.submitButton:hover {
+    color: white;
+    border: 1px solid gold;
+}
+
+a {
+    text-decoration: none;
+}
+
 #email {
     width: calc(40ch + 8px + var(--input-field-gap));
 }
